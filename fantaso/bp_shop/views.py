@@ -38,8 +38,8 @@ def cart():
     return render_template('bp_shop/cart.html')
 
 ##################
-# chechout
+# checkout
 ##################
-@shop.route('/chechout', methods=['GET'])
-def chechout():
-    return render_template('bp_shop/chechout.html')
+@shop.route('/checkout', methods=['GET'])
+def checkout():
+    return render_template('bp_shop/checkout.html')
