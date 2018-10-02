@@ -52,7 +52,7 @@ manager = Manager(app)
 # Begin Import Views
 #############################
 from fantaso import views
-from fantaso.website_blueprint.views import website_blueprint
+from fantaso.web_blueprint.views import web
 # from fantaso.users.views import users
 # from fantaso.welcome.views import welcome
 # from fantaso.main.views import main
@@ -68,7 +68,7 @@ from fantaso.website_blueprint.views import website_blueprint
 # from fantaso.agrimodule_api.views_new import agrimodule_api
 # from fantaso.crop_planning.views import crop_planning_bp
 
-app.register_blueprint(website_blueprint, url_prefix='/web')
+app.register_blueprint(web, url_prefix='/web')
 # app.register_blueprint(users, url_prefix='/users')
 # app.register_blueprint(welcome, url_prefix='/welcome')
 # app.register_blueprint(main, url_prefix='/main')

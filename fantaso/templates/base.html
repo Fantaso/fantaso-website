@@ -60,32 +60,32 @@
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight"  style="border-style: double; border-width: 0 1px 0 1px; border-color: rgba(0, 174, 213, 1);">
 
 			<h1 id="fh5co-logo">
-				<a href="{{ url_for('website_blueprint.index') }}">
+				<a href="{{ url_for('web.index') }}">
 					<img src="{{ url_for('static', filename='images/favicon.png') }}" alt="Fantaso Logo" width="40%" height="auto">
 				</a>
 			</h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
 					<li class="{% block index_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.index') }}">Home</a>
+						<a href="{{ url_for('web.index') }}">Home</a>
 					</li>
 					<li class="{% block services_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.services') }}">Services</a>
+						<a href="{{ url_for('web.services') }}">Services</a>
 					</li>
 					<li class="{% block industries_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.industries') }}">Industries</a>
+						<a href="{{ url_for('web.industries') }}">Industries</a>
 					</li>
 					<li class="{% block projects_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.projects') }}">Projects</a>
+						<a href="{{ url_for('web.projects') }}">Projects</a>
 					</li>
 					<li class="{% block about_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.about') }}">About</a>
+						<a href="{{ url_for('web.about') }}">About</a>
 					</li>
 					<li class="{% block blog_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.blog') }}">Blog</a>
+						<a href="{{ url_for('web.blog') }}">Blog</a>
 					</li>
 					<li class="{% block contact_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.contact') }}">Contact</a>
+						<a href="{{ url_for('web.contact') }}">Contact</a>
 					</li>
 				</ul>
 			</nav>
