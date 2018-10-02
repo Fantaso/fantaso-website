@@ -56,7 +56,7 @@ from fantaso.bp_web.views import web
 from fantaso.bp_shop.views import shop
 
 app.register_blueprint(web, url_prefix='/web')
-app.register_blueprint(web, url_prefix='/shop')
+app.register_blueprint(shop, url_prefix='/shop')
 #############################
 # End Import Views
 #############################
