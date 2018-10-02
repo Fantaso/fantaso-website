@@ -89,7 +89,7 @@ figure figcaption {
 }
 
 #fh5co-aside {
-  background-color: rgba(0, 174, 213, 1);
+  background-color: rgba(0, 174, 213, 0.5;
   border-color:red;
   border-width: 1px 1px 1px 1px;
   border-style: solid;
@@ -590,7 +590,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: #fff;
+  background:  rgba(0, 174, 213, 1);#fff;
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -605,7 +605,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 .work .desc span {
   display: block;
-  color: #999999;
+  color: white;#999999;
   font-size: 12px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
