@@ -87,9 +87,20 @@
 					<li class="{% block contact_active %}{% endblock %}">
 						<a href="{{ url_for('web.contact') }}">Contact</a>
 					</li>
-					<li class="{% block shop_active %}{% endblock %}">
+					<li id="nav-shop-index" class="{% block shop_index_active %}{% endblock %}">
 						<a href="{{ url_for('shop.index') }}">Shop</a>
 					</li>
+					<ul id="nav-shop-icons">
+						<li class="{% block shop_search_active %}{% endblock %}">
+							<a href="{{ url_for('shop.search') }}"><i class="fas fa-search"></i></a>
+						</li>
+						<li class="{% block shop_cart_active %}{% endblock %}">
+							<a href="{{ url_for('shop.cart') }}"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+						<li class="{% block shop_checkout_active %}{% endblock %}">
+							<a href="{{ url_for('shop.checkout') }}"><i class="far fa-credit-card"></i></a>
+						</li>
+					</ul>
 				</ul>
 			</nav>
 
