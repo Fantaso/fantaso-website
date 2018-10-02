@@ -53,36 +53,10 @@ manager = Manager(app)
 #############################
 from fantaso import views
 from fantaso.bp_web.views import web
-# from fantaso.users.views import users
-# from fantaso.welcome.views import welcome
-# from fantaso.main.views import main
-# from fantaso.settings.views import settings
-# from fantaso.farm_settings.views import farm_settings
-# from fantaso.agrimodule_settings.views import agrimodule_settings
-# from fantaso.pump_settings.views import pump_settings
-# from fantaso.agrimodule.views import agrimodule_bp
-# from fantaso.agripump.views import agripump_bp
-# from fantaso.crop_status.views import crop_status
-# from fantaso.login_check.views import login_check
-# from fantaso.admin.views import admin_bp
-# from fantaso.agrimodule_api.views_new import agrimodule_api
-# from fantaso.crop_planning.views import crop_planning_bp
+from fantaso.bp_shop.views import shop
 
 app.register_blueprint(web, url_prefix='/web')
-# app.register_blueprint(users, url_prefix='/users')
-# app.register_blueprint(welcome, url_prefix='/welcome')
-# app.register_blueprint(main, url_prefix='/main')
-# app.register_blueprint(settings, url_prefix='/settings')
-# app.register_blueprint(farm_settings, url_prefix='/farm-settings')
-# app.register_blueprint(agrimodule_settings, url_prefix='/agrimodule-settings')
-# app.register_blueprint(pump_settings, url_prefix='/pump-settings')
-# app.register_blueprint(agrimodule_bp, url_prefix='/agrimodule')
-# app.register_blueprint(agripump_bp, url_prefix='/agripump')
-# app.register_blueprint(crop_status, url_prefix='/crop-status')
-# app.register_blueprint(login_check, url_prefix='/login-check')
-# app.register_blueprint(admin_bp, url_prefix='/admin')
-# app.register_blueprint(agrimodule_api, url_prefix='/agrimodule_api')
-# app.register_blueprint(crop_planning_bp, url_prefix='/crop_planning')
+app.register_blueprint(web, url_prefix='/shop')
 #############################
 # End Import Views
 #############################
