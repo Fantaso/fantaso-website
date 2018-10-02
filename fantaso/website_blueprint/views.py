@@ -5,7 +5,6 @@ website_blueprint = Blueprint(
     'website_blueprint',
     __name__,
     template_folder='templates',
-    static_folder='static',
 )
 
 
