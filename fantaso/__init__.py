@@ -52,7 +52,7 @@ manager = Manager(app)
 # Begin Import Views
 #############################
 from fantaso import views
-from fantaso.web_blueprint.views import web
+from fantaso.bp_web.views import web
 # from fantaso.users.views import users
 # from fantaso.welcome.views import welcome
 # from fantaso.main.views import main
