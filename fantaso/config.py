@@ -36,7 +36,7 @@ class Config:
 
 
     ########## SQLALCHEMY ##########
-    # SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
+    SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
     # SQLALCHEMY_DATABASE_URI = 'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s'
     # SQLALCHEMY_DATABASE_URI = 'postgresql://fantaso:4oZe0EPTgV@localhost/fantaso'
 
