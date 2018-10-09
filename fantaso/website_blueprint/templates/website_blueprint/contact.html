@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base_web.html' %}
 
 {% block title %}
 	Contact Us
@@ -12,7 +12,7 @@
 
 <!-- GOOGLE MAPS -->
 {% block links_body %}
-	<script type="text/javascript" src="{{ url_for('static', filename='js/google_map.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='web/js/google_map.js') }}"></script>
 {% endblock links_body %}
 
 {% block contact_active %}
