@@ -1,0 +1,113 @@
+{% extends 'base_web.html' %}
+
+{% block title %}
+	Projects
+{% endblock %}
+
+{% block links_in_head %}
+{% endblock links_in_head %}
+
+{% block css_in_head %}
+{% endblock css_in_head %}
+
+{% block links_body %}
+{% endblock links_body %}
+
+{% block projects_active %}
+	fh5co-active
+{% endblock %}
+
+{% block content %}
+
+<!-- banner -->
+<aside id="fh5co-hero" class="js-fullheight">
+	<div class="flexslider js-fullheight">
+		<ul class="slides">
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/rawpixel-7635712-unsplash.jpeg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Check our work<strong></strong></h1>
+								<div class="underline-banner"></div>
+			   					<h2>Great projects and ideas like yours, makes us be passionate and curious about the outcome solution</h2>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+	  	</ul>
+  	</div>
+</aside>
+<!-- end banner -->
+
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Our Portfolio</h2>
+			<p class="fh5co-text animate-box text-justify" data-animate-effect="fadeInLeft">
+				We are really <strong>proud of our work</strong> and projects. Here you can find some of our work as well as <strong>our open source collaboration.</strong>
+				Our work ranges from 3D art, <strong>harwdare development</strong>, photovoltaic system design as well <strong>web development</strong> and urban farming.</p>
+		</div>
+	</div>
+	<div class="row row-bottom-padded-md">
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/solarvibes-preview.png') }});">
+				<div class="desc">
+					<h3>Solarvibes</h3>
+					<span>Web App, IoT, UI/UX</span>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/pv-off-grid-preview.jpg') }});">
+				<div class="desc">
+					<h3>Off-grid Photovoltaic System</h3>
+					<span>PV Design & Engineering, 3D Design</span>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/pv-on-grid-preview.jpg') }});">
+				<div class="desc">
+					<h3>On-grid Photovoltaic Power Plant</h3>
+					<span>PV Design & Engineering, 3D Design</span>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/aquaponic-preview.png') }});">
+				<div class="desc">
+					<h3>Photovoltaic Aquaponic Farm</h3>
+					<span>PV Design & Engineering, Farm Production Planning</span>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/pv-rooftop-preview.jpg') }});">
+				<div class="desc">
+					<h3>Rooftop Photovoltaic Power Plant</h3>
+					<span>PV Design & Engineering, 3D Design</span>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/solar-cafe-preview.jpg') }});">
+				<div class="desc">
+					<h3>Photovoltaic Crystal Coffee Shop</h3>
+					<span>PV Design & Engineering, 3D Design</span>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-padding text-center animate-box">
+			<a href="#" class="work image-popup" style="background-image: url({{ url_for('static', filename='web/images/agrimodule-preview.png') }});">
+				<div class="desc">
+					<h3>Agrimodule IoT Sensor</h3>
+					<span>Electronic Design, 3D Design & Rendering</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock content %}

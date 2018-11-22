@@ -6,4 +6,4 @@ from fantaso import app
 #############################
 @app.route('/', methods=['GET'])
 def index():
-    return redirect(url_for('website_blueprint.index'))
+    return redirect(url_for('web.index'))

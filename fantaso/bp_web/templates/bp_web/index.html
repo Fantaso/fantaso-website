@@ -1,0 +1,315 @@
+{% extends 'base_web.html' %}
+
+{% block title %}
+	Index
+{% endblock %}
+
+{% block links_in_head %}
+{% endblock links_in_head %}
+
+{% block css_in_head %}
+{% endblock css_in_head %}
+
+{% block links_body %}
+{% endblock links_body %}
+
+{% block index_active %}
+fh5co-active
+{% endblock %}
+
+{% block content %}
+<!--
+Photo by Louis Reed on Unsplash IoT
+Photo by Harpal Singh on Unsplash UI
+Photo by Owen Beard on Unsplash AI -->
+
+<aside id="fh5co-hero" class="js-fullheight">
+	<div class="flexslider js-fullheight">
+		<ul class="slides">
+		   	<!-- web -->
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/radek-grzybowski-66457-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Web App Development</h1>
+								<h2>We make from basic website or MVP upto Ecommerce or social networks web applications.</h2>
+								<p><a class="btn btn-primary btn-demo popup-vimeo" href="{{ url_for('web.services') }}">View more</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+			<!-- end web -->
+			<!-- mobile app -->
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/william-hook-476194-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Mobile App Development</h1>
+								<h2>We also make Android and iOS</h2>
+								<p><a class="btn btn-primary btn-demo popup-vimeo" href="{{ url_for('web.services') }}">View more</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+			<!-- end mobile app -->
+			<!-- ui/ux design -->
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/hal-gatewood-613602-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>User Interface & Experience Design</h1>
+								<h2>We make your apps look visually stimulating, easy and intuitive to use them</h2>
+								<p><a class="btn btn-primary btn-demo popup-vimeo" href="{{ url_for('web.projects') }}">View more</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+			<!-- end ui/ux design -->
+			<!-- IoT -->
+			<li style="background-image: url({{ url_for('static', filename='web/images/bertrand-bouchez-409305-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Internet of Things<strong></strong></h1>
+			   					<h2>We prototype your ideas, develop the necessary hardware and integrate it with your apps</h2>
+								<p><a class="btn btn-primary btn-demo popup-vimeo" href="{{ url_for('web.projects') }}">View more</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+			<!-- end IoT -->
+	  	</ul>
+  	</div>
+</aside>
+
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Our Services</h2>
+			<p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">We handle all aspects of the <strong>software development</strong> process that allows you to stay focused on your business goals</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-laptop"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Web Development</h3>
+					<p>We build web applications ranging from lightweight MVPs to complex FinTech solutions. Our web development team specialized in Python, Django, Node.js, Scala, AngularJS, and React tackles any engineering challenges and satisfies all the most demanding requests. </p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-mobile-alt"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Mobile App Development</h3>
+					<p>We offer both native and cross-platform development. Depending on your needs, our tools are: Swift, Objective-C, Java, Kotlin, React Native, Cordova, Ionic, and PhoneGap. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-pencil-alt"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>UX/UI Design</h3>
+					<p>esign is a way to transform your ideas into the great interface where user interacts with the product. We create human-centered, research-based, scalable interfaces following the best UX/UI practices. </p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-digital-tachograph"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Hardware Development</h3>
+					<p>HA is rising more and more into our daily life. From sensors all around the city and the fields as well as inside our houses. We make sure your devices connected to your applications are secure and reliable and your data safely safeguarded. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row centered">
+		<div class=" animate-box" data-animate-effect="fadeInLeft">
+			<p><a href="{{ url_for('web.services') }}" class="btn btn-primary">All services</a></p>
+		</div>
+	</div>
+</div>
+
+<!-- Why fantaso -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Why Fantaso Digital Services</h2>
+			<p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">This is how we <strong>contribute</strong> to open source and empower people.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="row centered">
+			<div class=" animate-box" data-animate-effect="fadeInLeft">
+				<p><a href="{{ url_for('web.contact') }}" class="btn btn-primary">Get in touch</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end why fantaso -->
+
+<!-- tehnologies -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Technologies We Work With</h2>
+			<!-- <p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">This is how we <strong>contribute</strong> to open source and empower people.</p> -->
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<ul class="tech-list">
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-python.png') }}" class="img-responsive img-centered" alt="Python"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-flask.png') }}" class="img-responsive img-centered" alt="flask"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-kivy.png') }}" class="img-responsive img-centered" alt="kivy"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-postgresql.png') }}" class="img-responsive img-centered" alt="postgresql"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-mongodb3.png') }}" class="img-responsive img-centered" alt="mongodb"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-dynamodb.png') }}" class="img-responsive img-centered" alt="dynamodb"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-celery.png') }}" class="img-responsive img-centered" alt="celery"></li>
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-mongodb2.jpg') }}" class="img-responsive img-centered" alt="mongodb2"></li> -->
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-angularjs.png') }}" class="img-responsive img-centered" alt="angularjs"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-ionic.png') }}" class="img-responsive img-centered" alt="ionic"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-cordova1.png') }}" class="img-responsive img-centered" alt="cordova"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-github.png') }}" class="img-responsive img-centered" alt="github"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-aws.png') }}" class="img-responsive img-centered" alt="amazon web services"></li>
+			</ul>
+			<ul class="tech-list">
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-ios.png') }}" class="img-responsive img-centered" alt="ios"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-android.png') }}" class="img-responsive img-centered" alt="android"></li>
+
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-linux.png') }}" class="img-responsive img-centered" alt="linux"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-macos1.png') }}" class="img-responsive img-centered" alt="macos"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-windows.png') }}" class="img-responsive img-centered" alt="windows"></li>
+			</ul>
+			<ul class="tech-list">
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-adobecloud2.png') }}" class="img-responsive img-centered" alt="adobecloud2"></li> -->
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-adobecloud.png') }}" class="img-responsive img-centered" alt="adobecloud"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-adobeafterfx.png') }}" class="img-responsive img-centered" alt="adobeafterfx"></li>
+
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-3dmax.jpg') }}" class="img-responsive img-centered" alt="3dmax"></li>
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-3dmax2.png') }}" class="img-responsive img-centered" alt="3dmax2"></li> -->
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-fusion360.png') }}" class="img-responsive img-centered" alt="fusion360"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-blender.png') }}" class="img-responsive img-centered" alt="blender"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-vray.png') }}" class="img-responsive img-centered" alt="vray"></li>
+			</ul>
+			<ul class="tech-list">
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-raspberrypi.png') }}" class="img-responsive img-centered" alt="raspberrypi"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-micropython.png') }}" class="img-responsive img-centered" alt="micropython"></li>
+				<li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-awsiot.jpg') }}" class="img-responsive img-centered" alt="awsiot"></li>
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-python.png') }}" class="img-responsive img-centered" alt="python"></li> -->
+
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-slack.png') }}" class="img-responsive img-centered" alt="slack"></li> -->
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-travisci.png') }}" class="img-responsive img-centered" alt="travisci"></li> -->
+				<!-- <li class="tech-icon centered"><img src="{{ url_for('static', filename='web/images/technologies/tech-github.png') }}" class="img-responsive img-centered" alt="github"></li> -->
+			</ul>
+
+		</div>
+	</div>
+</div>
+<!-- end tehnologies -->
+
+<!-- industries -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Ideas We Can Work With</h2>
+			<p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">Have a couples <strong>Ideas to Spark</strong> your mind.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fab fa-pagelines"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Agriculture & Gardening</h3>
+					<p class="text-justify">Grow and take better care of plants, give them the exact amount of water,
+						and exactly when they need it for a healthier growth.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-thermometer-three-quarters"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>IoT Systems & Hardware</h3>
+					<p class="text-justify">Be able to gather all your data from sensor or system all around
+						the world into an all-in-one application and manage them, make
+						analysis based on data gathered and interact with them in real-time.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-cogs"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Home & Automation</h3>
+					<p class="text-justify">Domotize your home, remotely control your appliances and house equiptment,
+						connect your Alexa device, efficiently control your energy consumption
+						and reduce your electricity billing from mobile phone.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Education & Knowledge Transfer</h3>
+					<p class="text-justify">Come up with a more effective way to teach students, monitor
+						their progress and incentivice the way they learn.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="row centered">
+			<div class=" animate-box" data-animate-effect="fadeInLeft">
+				<p><a href="{{ url_for('web.industries') }}" class="btn btn-primary">All Ideas</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end industries -->
+
+
+{% endblock %}

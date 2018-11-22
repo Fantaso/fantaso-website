@@ -1,0 +1,217 @@
+{% extends 'base_web.html' %}
+
+{% block title %}
+	About Us
+{% endblock %}
+
+{% block links_in_head %}
+{% endblock links_in_head %}
+
+{% block css_in_head %}
+{% endblock css_in_head %}
+
+{% block links_body %}
+{% endblock links_body %}
+
+{% block about_active %}
+	fh5co-active
+{% endblock %}
+
+{% block content %}
+<!-- banner -->
+<aside id="fh5co-hero" class="js-fullheight">
+	<div class="flexslider js-fullheight">
+		<ul class="slides">
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/ian-schneider-66374-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Fantaso Digital Services<strong></strong></h1>
+								<div class="underline-banner"></div>
+			   					<h2>Shaping the visions and dreams of entreprenuers and tech companies.</h2>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+	  	</ul>
+  	</div>
+</aside>
+<!-- end banner -->
+
+<!-- About company -->
+<div class="fh5co-narrow-content">
+	<div class="row row-bottom-padded-md">
+		<div class="col-md-6 animate-box div-centered" data-animate-effect="fadeInLeft">
+			<img class="img-responsive img-centered" src="{{ url_for('static', filename='web/images/favicon.png') }}" alt="Fantaso Logo" style="max-width: 300px;">
+		</div>
+		<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+			<h2 class="fh5co-heading">About Fantaso</h2>
+
+			<p>Fantaso Digital Services was founded in 2018 for the emerging tech scene in Berlin.
+			Fantaso started as an audio/visual studio back in 2008 in Venezuela,
+			however it pivoted due to the largely emerging tech scene that has been growing in Berlin for the past years.
+			We saw the need in many startups and tech companies that wanted to prototype or develop products fast and effective
+			without the need of worrying about the technical hassles at a fair price.</p>
+
+			<p>We are a team of dreamers, visionaries and makers specialized in engineering, informatics and designing that always break the paradigms to bring fantasy to life.</p>
+
+			<p>We help startups, tech companies, freelancers, engineers and designers to develop digital solutions from
+			start until completion.
+			We manage your project, develop it, test it. We hand you a turnkey solution ready for you to start using it.
+			Our projects can range from software and hardware development to UI/UX design.</p>
+			<ul>
+				<li>We develop from web landing page or Ecommerce to more complex web/mobile applications such instagram or xxxxx.</li>
+				<li>We can fast prototype hardware with raspberry or make a market-ready product as well as integrating your hardware with a web/mobile app as an IoT system.</li>
+				<li>We can also design the graphical user interface and experience of your application.</li>
+			</ul>
+			<br>
+			<p>We are huge believers in working projects where the innovations we create and make, they help human kind
+			to be one step close to less dependency on intrisic needs such as: 1.water, 2.energy, 3.food, 4.shelter, 5.information.</p>
+
+			<p>If any of this is of your interest or It could benefit your business please get in touch with over email or phone.</p>
+		</div>
+	</div>
+</div>
+<!-- end about company -->
+
+<!-- mision and vision -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Our Mision / Our Vision</h2>
+			<!-- <p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">Our <strong>personalized attention</strong> offers at all times communication and rapid changes.</p> -->
+		</div>
+	</div>
+	<div class="row row-bottom-padded-md centered">
+		<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+			<i class="fas fa-bullseye mision-vision-icon"></i>
+			<h2 class="fh5co-heading">Our Mision</h2>
+			<p>Help our clients <strong>to succeed</strong> with the products they trust us to develop. We <strong>considerer and treat clients as our partners</strong>
+			and during and after project completion.</p>
+		</div>
+		<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+			<i class="far fa-eye mision-vision-icon"></i>
+			<h2 class="fh5co-heading">Our Vision</h2>
+			<p><strong>Help our communities</strong> with open source digital solutions that <strong>help people to be less dependent</strong> on human intrisic
+				such as: Water, Energy, Food, Shelter, Information.</p>
+		</div>
+	</div>
+</div>
+<!-- end mision and vision -->
+
+
+<!-- CORE VALUES -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Our Values</h2>
+			<!-- <p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">Our <strong>personalized attention</strong> offers at all times communication and rapid changes.</p> -->
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="far fa-handshake"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>People & Community</h3>
+					<p>We believe in people and the community we represent.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="far fa-lightbulb"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Honesty & Integrity</h3>
+					<p>We believe in transparency and sincere communication.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fab fa-slideshare"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Genuinity & Respect</h3>
+					<p>We believe and respect in diverse thinking, being, shape, form, color.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-redo-alt"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Growth & Evolution</h3>
+					<p>We believe and are proud of our work, as well creating evolving client relationships.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end core values -->
+
+<!-- TEAM -->
+<div class="fh5co-narrow-content width100">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Our Team</h2>
+			<p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">Our <strong>diverse expertise</strong> allows our clients <strong>to trust us</strong> in every stage of the project.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-4 col-md-3 hover-blur no-padd-or-marg no-padd-or-marg">
+			<a>
+				<img src="{{ url_for('static', filename='web/images/camilo.jpg') }}" alt=""/>
+				<h2><span class="text-white">Camilo<br>
+					<small>UI/UX Designer</small>
+				</span></h2>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 hover-blur no-padd-or-marg">
+			<a>
+				<img src="{{ url_for('static', filename='web/images/carlos.jpg') }}" alt=""/>
+				<h2><span class="text-white">Carlos<br>
+					<small>Backend Engineer</small>
+				</span></h2>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 hover-blur no-padd-or-marg">
+			<a>
+				<img src="{{ url_for('static', filename='web/images/oscar.png') }}" alt=""/>
+				<h2><span class="text-white">Oscar<br>
+					<small>Hardware Engineer</small>
+				</span></h2>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 hover-blur no-padd-or-marg">
+			<a>
+				<img src="{{ url_for('static', filename='web/images/juan.jpg') }}" alt=""/>
+				<h2><span class="text-white">Juan<br>
+					<small>3D Artist</small>
+				</span></h2>
+			</a>
+		</div>
+
+	</div>
+</div>
+<!-- end TEAM -->
+
+
+<!-- how is at work -->
+<!-- end how is at work -->
+
+{% endblock content %}

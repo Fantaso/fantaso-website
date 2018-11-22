@@ -1,0 +1,170 @@
+{% extends 'base_web.html' %}
+
+{% block title %}
+	Contact Us
+{% endblock %}
+
+{% block links_in_head %}
+{% endblock links_in_head %}
+
+{% block css_in_head %}
+{% endblock css_in_head %}
+
+<!-- GOOGLE MAPS -->
+{% block links_body %}
+	<script type="text/javascript" src="{{ url_for('static', filename='web/js/google_map.js') }}"></script>
+{% endblock links_body %}
+
+{% block contact_active %}
+	fh5co-active
+{% endblock %}
+
+{% block content %}
+<aside id="fh5co-hero" class="js-fullheight">
+	<div class="flexslider js-fullheight">
+		<ul class="slides">
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/pavan-trikutam-1660-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Contact Us<strong></strong></h1>
+								<div class="underline-banner"></div>
+			   					<h2>We are excited to listen to your ideas to help you achieve them</h2>
+								<h2>We are ready to hear your concerns to help you overcome them</h2>
+
+
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+
+
+								<div class="row contact-icons-banner">
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+										<div class="animate-box" data-animate-effect="fadeInLeft">
+											<div><i class="fas fa-at"></i></div>
+											<p><a href="mailto:info@fantaso.de">info@fantaso.de</a></p>
+										</div>
+									</div>
+
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+										<div class="animate-box contact-icons-banner-circle" data-animate-effect="fadeInLeft">
+											<div><i class="fas fa-phone"></i></div>
+											<p><a href="tel://+4917647645375">+49 176 4764 5375</a></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+										<div class="animate-box" data-animate-effect="fadeInLeft">
+											<div><i class="fas fa-map-marked-alt"></i></div>
+											<p><a href="https://www.google.com/maps/place/Boddinstraße+32,+12053+Berlin/@52.4796432,13.4238213,17z/" target="_blank">Boddinstraße 32, 12055, Berlin</a></p>
+										</div>
+									</div>
+								</div>
+
+
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+	  	</ul>
+
+  	</div>
+</aside>
+
+
+
+<div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Contact Form</h2>
+			<p class="fh5co-text animate-box" data-animate-effect="fadeInLeft">You can fill the <strong>"contact form"</strong> or you <strong>can call us too.</strong></p>
+		</div>
+	</div>
+	<form action="">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Company">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Phone">
+						</div>
+						<div class="form-group">
+							<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+
+						<div class="form-group">
+							<label for="technology">Technology</label>
+							<select class="form-control">
+								<option value="web">Web</option>
+								<option value="mobile">Mobile</option>
+								<option value="mercedes">Desktop</option>
+								<option value="mercedes">UI/UX</option>
+								<option value="iot">IoT</option>
+								<option value="iot">Hardware</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="stage">Project Stage</label>
+							<select class="form-control">
+								<option value="prototype">Digital Design</option>
+								<option value="prototype">Prototype</option>
+								<option value="mvp">MVP</option>
+								<option value="complete">Complete</option>
+								<option value="upgrade">Upgrade Existing</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="budget">Budget</label>
+							<select class="form-control">
+								<option value="budget1">€0 - €1.000</option>
+								<option value="budget2">€1.000 - €2.500</option>
+								<option value="budget3">€2.500 - €10.000</option>
+								<option value="budget3">€10.000 - €25.000</option>
+								<option value="budget4">+€25.000</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="budget">How did you hear about us</label>
+							<select class="form-control">
+								<option value="email">Email</option>
+								<option value="socialmedia">Social Networks</option>
+								<option value="flyer">Flyers</option>
+								<option value="referral">Referral</option>
+								<option value="referral">Trade & Conference</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="form-group centered">
+							<input type="submit" class="btn btn-primary btn-md" value="Send Message">
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</form>
+</div>
+<!-- <div id="map"></div> -->
+{% endblock content %}

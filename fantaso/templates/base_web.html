@@ -44,7 +44,7 @@
 	<!-- Custom style  -->
 	<link href="{{ url_for('static', filename='web/css/custom.css') }}" type="text/css" rel="stylesheet">
 	<!-- FONT AWESOME -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<!-- Modernizr JS -->
 	<script type="text/javascript" src="{{ url_for('static', filename='web/js/modernizr-2.6.2.min.js') }}"></script>
 	<!-- FOR IE9 below -->
@@ -60,33 +60,47 @@
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight"  style="border-style: double; border-width: 0 1px 0 1px; border-color: rgba(0, 174, 213, 1);">
 
 			<h1 id="fh5co-logo">
-				<a href="{{ url_for('website_blueprint.index') }}">
+				<a href="{{ url_for('web.index') }}">
 					<img src="{{ url_for('static', filename='web/images/favicon.png') }}" alt="Fantaso Logo" width="40%" height="auto">
 				</a>
 			</h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
 					<li class="{% block index_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.index') }}">Home</a>
+						<a href="{{ url_for('web.index') }}">Home</a>
 					</li>
 					<li class="{% block services_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.services') }}">Services</a>
+						<a href="{{ url_for('web.services') }}">Services</a>
 					</li>
 					<li class="{% block industries_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.industries') }}">Industries</a>
+						<a href="{{ url_for('web.industries') }}">Ideas</a>
 					</li>
 					<li class="{% block projects_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.projects') }}">Projects</a>
+						<a href="{{ url_for('web.projects') }}">Projects</a>
 					</li>
 					<li class="{% block about_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.about') }}">About</a>
+						<a href="{{ url_for('web.about') }}">Company</a>
 					</li>
-					<li class="{% block blog_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.blog') }}">Blog</a>
-					</li>
+					<!-- <li class="{% block blog_active %}{% endblock %}">
+						<a href="{{ url_for('web.blog') }}">Blog</a>
+					</li> -->
 					<li class="{% block contact_active %}{% endblock %}">
-						<a href="{{ url_for('website_blueprint.contact') }}">Contact</a>
+						<a href="{{ url_for('web.contact') }}">Contact</a>
 					</li>
+					<!-- <li id="nav-shop-index" class="{% block shop_index_active %}{% endblock %}">
+						<a href="{{ url_for('shop.index') }}">Shop</a>
+					</li> -->
+					<!-- <ul id="nav-shop-icons"> -->
+						<!-- <li class="{% block shop_search_active %}{% endblock %}">
+							<a href="{{ url_for('shop.search') }}"><i class="fas fa-search"></i></a>
+						</li>
+						<li class="{% block shop_cart_active %}{% endblock %}">
+							<a href="{{ url_for('shop.cart') }}"><i class="fas fa-shopping-cart"></i></a>
+						</li> -->
+						<!-- <li class="{% block shop_checkout_active %}{% endblock %}">
+							<a href="{{ url_for('shop.checkout') }}"><i class="far fa-credit-card"></i></a>
+						</li> -->
+					<!-- </ul> -->
 				</ul>
 			</nav>
 
@@ -115,9 +129,95 @@
 
 		</aside>
 
+		<!-- body -->
 		<div id="fh5co-main">
 			{% block content %} {% endblock content %}
+
+
+			<!-- footer -->
+			<div id="main-footer" class="animate-box" data-animate-effect="fadeInLeft"  style="background: lightgray;">
+				<div class="fh5co-narrow-content">
+					<div class="row row-bottom-padded-md">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="footer-web-links col-md-4 col-sm-4 col-xs-6">
+									<p><strong>Company</strong></p>
+									<p><div class="underline"></div></p>
+									<p><a href="{{ url_for('web.services') }}">Services</a></p>
+									<p><a href="{{ url_for('web.industries') }}">Industries</a></p>
+									<p><a href="{{ url_for('web.about') }}">About Us</a></p>
+									<p><a href="{{ url_for('web.contact') }}">Contact</a></p>
+									<p><a href="{{ url_for('web.projects') }}">Projects</a></p>
+							</div>
+							<div class="footer-web-links col-md-4 col-sm-4 col-xs-6">
+									<p><strong>Services</strong></p>
+									<p><div class="underline"></div></p>
+									<p><a href="{{ url_for('web.services') }}">Web Development</a></p>
+									<p><a href="{{ url_for('web.services') }}">Mobile Aplication</a></p>
+									<p><a href="{{ url_for('web.services') }}">UI/UX Design</a></p>
+									<p><a href="{{ url_for('web.services') }}">IoT Systems</a></p>
+									<p><a href="{{ url_for('web.services') }}">Hardware Protoyping</a></p>
+									<p><a href="{{ url_for('web.services') }}">Data Scraping</a></p>
+							</div>
+							<div class="footer-web-links col-md-4 col-sm-4 col-xs-6">
+								<p><strong>About Fantaso</strong></p>
+								<p><div class="underline"></div></p>
+								<p><a href="#">FAQ</a></p>
+								<p><a href="#">Press</a></p>
+								<p><a href="#">Imprint</a></p>
+								<p><a href="#">Privacy Policy</a></p>
+								<p><a href="#">Cookies Notice</a></p>
+								<p><a href="#">Partners</a></p>
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12 centered main-footer-second">
+							<div class="col-md-12 col-sm-12 col-xs-12 centered">
+								<p class="fh5co-lead">Would you like to know how much will your app be?</p>
+								<p><a href="{{ url_for('web.contact') }}" class="btn btn-primary">Get proposal!</a></p>
+							</div>
+							<div class="footer-contact centered col-md-6 col-sm-6 col-xs-6">
+								<p><strong>Germany</strong></a></p>
+								<p><div class="underline-contact"></div></p>
+								<p class="contact-info"><i class="fas fa-map-marked-alt"></i><a href="https://www.google.com/maps/place/Boddinstraße+32,+12053+Berlin/@52.4796432,13.4238213,17z/" target="_blank">Boddinstrasse 32<br>12053, Berlin</a></p>
+								<p class="contact-info"><i class="fas fa-phone"></i><a href="tel:+4917647645375">+49 176 47645375</a></p>
+								<p class="contact-info"><i class="fas fa-at"></i><a href="mailto:info@fantaso.de">info@fantaso.de</a></p>
+							</div>
+							<div class="footer-contact centered col-md-6 col-sm-6 col-xs-6">
+								<p><strong>Venezuela</strong></p>
+								<p><div class="underline-contact"></div></p>
+								<p class="contact-info"><i class="fas fa-map-marked-alt"></i><a href="https://www.google.com/maps/place/Boddinstraße+32,+12053+Berlin/@52.4796432,13.4238213,17z/" target="_blank">Av. La mata 22d<br>3050, Cabudare</a></p>
+								<p class="contact-info"><i class="fas fa-phone"></i><a href="tel:+584145134563">+58 414 5134563</a></p>
+								<p class="contact-info"><i class="fas fa-at"></i><a href="mailto:info@fantaso.com.ve">info@fantaso.com.ve</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row social-media-icons centered">
+						<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
+							<p><small><small><span><strong class="blue100">&copy;</strong> 2018 <strong>Fantaso GbR.</strong> All rights reserved.</span></small></small></p>
+						</div>
+
+						<div class="col-lg-4 col-lg-offset-3 col-md-5 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-6">
+							<ul>
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-behance"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+								<li><a href="#"><i class="icon-youtube"></i></a></li>
+								<li><a href="#"><i class="fab fa-medium"></i></a></li>
+								<!-- //TODO: add Clutch.co icon -->
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- end footer -->
+
 		</div>
+		<!-- end body -->
 	</div>
 
 	<!-- jQuery -->

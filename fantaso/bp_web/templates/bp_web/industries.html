@@ -1,0 +1,237 @@
+{% extends 'base_web.html' %}
+
+{% block title %}
+	Industries
+{% endblock %}
+
+{% block links_in_head %}
+{% endblock links_in_head %}
+
+{% block css_in_head %}
+{% endblock css_in_head %}
+
+{% block links_body %}
+{% endblock links_body %}
+
+{% block industries_active %}
+	fh5co-active
+{% endblock %}
+
+{% block content %}
+<aside id="fh5co-hero" class="js-fullheight">
+	<div class="flexslider js-fullheight">
+		<ul class="slides">
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/patrick-tomasso-406271-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+								<h1>Ideas<strong></strong></h1>
+								<div class="underline-banner"></div>
+			   					<h2>Get inspired in diverse professional fields</h2>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+	  	</ul>
+  	</div>
+</aside>
+
+<!-- our industries -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Ideas</h2>
+			<p class="fh5co-text animate-box text-justify" data-animate-effect="fadeInLeft">
+				Our expertise and research allows us to <strong>help you succeed</strong> in different fields.
+				Different ideas, different fields of expertise. <strong>Get inspired by ideas</strong> and innovate your own.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-store-alt"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>E-commerce & Retail</h3>
+					<p class="text-justify">Sell and analyse your clients needs, anticipate their ever changing
+						needs and adapt quickly your inventory into the disrupting and ever
+						emerging and changing markets.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-futbol"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Sports & Fantasy</h3>
+					<p class="text-justify">Have your betting or gaming platform that allow users to build
+						teams of real professional players to compete based on live
+						performance games.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fab fa-pagelines"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Agriculture & Gardening</h3>
+					<p class="text-justify">Grow and take better care of plants, give them the exact amount of water,
+						and exactly when they need it for a healthier growth.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-thermometer-three-quarters"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>IoT Systems & Hardware</h3>
+					<p class="text-justify">Be able to gather all your data from sensor or system all around
+						the world into an all-in-one application and manage them, make
+						analysis based on data gathered and interact with them in real-time.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-cogs"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Home & Automation</h3>
+					<p class="text-justify">Domotize your home, remotely control your appliances and house equiptment,
+						connect your Alexa device, efficiently control your energy consumption
+						and reduce your electricity billing from mobile phone.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Education & Knowledge Transfer</h3>
+					<p class="text-justify">Come up with a more effective way to teach students, monitor
+						their progress and incentivice the way they learn.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-university"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Finance & Banking</h3>
+					<p class="text-justify">Make financial services more efficient and appealing to clients
+						by implementing technology driven solutions.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-briefcase-medical"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Health Сare & Fitness</h3>
+					<p class="text-justify">Connect quickly and talk to your doctor in real-time. Improve
+						your health habbits by monitoring and managing better your exercises
+						in a cost-effective and motivating way. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-taxi"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Taxi & Transportation</h3>
+					<p class="text-justify">Build the next Uber type of application, track your fleet of vehicles,
+						solve logistic problems, and optimize your milage and cost. </p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-plane-departure"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Travel & Booking</h3>
+					<p class="text-justify">Disrupt circular economy, come with new ways of attracting travelers,
+						and turists with more flexible accommodations, cheaper flights routes
+						search engines and booking systems. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-building"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Real Estate</h3>
+					<p class="text-justify">Develop more attractive ways to show buy, sell, or lease your property.
+						3D showrooms, interactive online systems and augmented reality to
+						captivate more your clients' desires.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-people-carry"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Social Services & Philanthropy</h3>
+					<p class="text-justify">Access, monitor and have all information about your social cases instantly.
+						Help persons who experience traumas with augmented reality to treat and ease
+						their problems when they are at home with your doctor's approval.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end our industries -->
+
+<!-- span -->
+<div class="row centered">
+	<div class=" animate-box col-lg-6 col-md-6 col-sm-6 col-xs-6" data-animate-effect="fadeInLeft">
+		<p><a href="{{ url_for('web.projects') }}" class="btn btn-primary">View our projects</a></p>
+	</div>
+	<div class=" animate-box col-lg-6 col-md-6 col-sm-6 col-xs-6" data-animate-effect="fadeInLeft">
+		<p><a href="{{ url_for('web.services') }}" class="btn btn-primary">Check our services</a></p>
+	</div>
+</div>
+<!-- end span -->
+
+
+{% endblock content %}

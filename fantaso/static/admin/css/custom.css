@@ -1,0 +1,42 @@
+/* =======================================================
+*
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
+.img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SHOP ICONS IN NAV BAR */
+#nav-shop-index{
+    margin-bottom: 5px !important;
+    /* padding-bottom:0 !important; */
+}
+
+#nav-shop-icons {
+  padding: 0;
+  margin: 0;
+  /* margin-top: 15px !important; */
+  /* padding-top: 10px !important; */
+  text-align: center;
+}
+#nav-shop-icons li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  list-style: none;
+}
+#nav-shop-icons li a {
+    text-decoration: none !important;
+    outline: none  !important;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 4px;
+}
+#nav-shop-icons li a:hover, #nav-shop-icons li a:active, #nav-shop-icons li a:focus {
+  text-decoration: none !important;
+  outline: none  !important;
+  color: black !important;
+}

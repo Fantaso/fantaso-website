@@ -1,0 +1,152 @@
+{% extends 'base_web.html' %}
+
+{% block title %}
+	Services
+{% endblock %}
+
+{% block links_in_head %}
+{% endblock links_in_head %}
+
+{% block css_in_head %}
+{% endblock css_in_head %}
+
+{% block links_body %}
+{% endblock links_body %}
+
+{% block services_active %}
+	fh5co-active
+{% endblock %}
+
+{% block content %}
+<!-- banner -->
+<aside id="fh5co-hero" class="js-fullheight">
+	<div class="flexslider js-fullheight">
+		<ul class="slides">
+		   	<li style="background-image: url({{ url_for('static', filename='web/images/nicolas-thomas-540353-unsplash.jpg') }});">
+		   		<div class="overlay"></div>
+		   		<div class="container-fluid">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Our Services<strong></strong></h1>
+								<div class="underline-banner"></div>
+			   					<h2>Our diverse services allow us to help you with just more than software</h2>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+	  	</ul>
+  	</div>
+</aside>
+<!-- end banner -->
+
+<!-- our services -->
+<div class="fh5co-narrow-content">
+	<div class="row title-text">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Our Services</h2>
+			<p class="fh5co-text animate-box text-justify" data-animate-effect="fadeInLeft">
+				We work with start-ups, tech or non-tech companies to <strong>help them to solve technical problems</strong>
+				in different areas of the project. We help them upgrade or create new products and digital services,
+				<strong>taking the technical hassle off our clients' shoulders</strong> and help them build a scalable, cost-effective
+				and time-consuming solution.
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-laptop"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Web Development</h3>
+					<p class="text-justify">We build web applications ranging from lightweight landing pages or MVPs to complex Ecommerce sites or FinTech solutions.
+						Our team specializes in Python, Flask, AngularJS.
+						Most demanding web applications can be satisfied with our tech stack.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-mobile-alt"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Mobile App Development</h3>
+					<p class="text-justify">We build mobile applcations with cross-platform development.
+						Our team specializes in	Cordova and Ionic.
+						Progressive apps, offer faster and cost effective development for both Android and iOS.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-pencil-alt"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>UX/UI Design</h3>
+					<p class="text-justify">We design to transform your ideas into fantastic interfaces, where users can be visual stimulated
+						and can interact with the application as easy and intuitive a world inside of an app can allows us to develop.
+						 We create research-based, scalable interfaces following the best UI/UX practices.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-digital-tachograph"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Hardware Development</h3>
+					<p class="text-justify">We design and build hardware. We turn the needs of interaction with the real world in a digital way.
+						We fast prototype your MVP or projects for testing and concept-proof as well as build you a market ready product.
+						Our team specilizes with controllers such as Raspberry Pis or microcontrollers.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-thermometer-three-quarters"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>IoT Systems</h3>
+					<p class="text-justify">We design and build Internet of Things devices. We build your hardware with sensors connected to internet and we build
+						the web/mobile application to manage, monitor and control your hardware and sensors.
+						Our team specializes with most up-to-date technologies such as Amazon Web Services - AWS IoT</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+				<div class="fh5co-icon">
+					<i class="fas fa-file-csv"></i>
+				</div>
+				<div class="fh5co-text">
+					<h3>Data Scraping</h3>
+					<p class="text-justify">We build scripts to collect unorganized data all over internet to organize it and store it in databases.
+						Clients find it usefull to gather information to develop new products, for market studies, among others.
+						Our team specializes with Python, Pandas, any database, excel, csv among others.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end our services -->
+
+<!-- span -->
+<div class="row centered">
+	<div class=" animate-box" data-animate-effect="fadeInLeft">
+		<p><a href="{{ url_for('web.industries') }}" class="btn btn-primary">View Potential Ideas</a></p>
+	</div>
+</div>
+<!-- end span -->
+{% endblock content %}
