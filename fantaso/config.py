@@ -36,12 +36,9 @@ class Config:
 
 
     ########## SQLALCHEMY ##########
-    # SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
-    # SQLALCHEMY_DATABASE_URI = 'postgresql://fantasowebsiteawsuser:93s!Y88$DUz6qZ!@rds-postgresql-fantaso-website.ckbxgtg1smlt.eu-central-1.rds.amazonaws.com:5432/fantaso_website_db'
-    SQLALCHEMY_DATABASE_URI = 'postgresql://fantasowebawsuser:93s!Y88$DUz6qZ!@fantaso-webdb.ckbxgtg1smlt.eu-central-1.rds.amazonaws.com:5432/fantasoweb_db'
+    SQLALCHEMY_DATABASE_URI = environ.get('AWS_DATABASE_URI')
     # SQLALCHEMY_DATABASE_URI = 'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s'
     # SQLALCHEMY_DATABASE_URI = 'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s'
-    # SQLALCHEMY_DATABASE_URI = 'postgresql://fantaso:4oZe0EPTgV@localhost/fantaso'
 
     # SQLALCHEMY_TRACK_MODIFICATIONS = False
 
